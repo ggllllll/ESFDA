@@ -15,8 +15,8 @@ def dice_coefficient_1(binary_segmentation, binary_gt_label, binary_segmentation
         Input:
             binary_segmentation: binary 2D numpy array representing the region of interest as segmented by the algorithm
             binary_gt_label: binary 2D numpy array representing the region of interest as provided in the database
-            binary_segmentation_not:binary_segmentation的取反 用来计算TN
-            binary_gt_label_not:binary_gt_label的取反 用来计算TN
+            binary_segmentation_not:binary_segmentation
+            binary_gt_label_not:binary_gt_label
         Output:
             dice_value: Dice coefficient between the segmentation and the ground truth
     '''
