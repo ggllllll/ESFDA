@@ -361,7 +361,7 @@ def create_table_neighbour_code_to_contour_length(spacing_mm):
                                        "10", 2)] = diag
 
   neighbour_code_to_contour_length[int("00"
-                                       "第一阶段", 2)] = horizontal
+                                       "", 2)] = horizontal
 
   neighbour_code_to_contour_length[int("01"
                                        "00", 2)] = diag
@@ -373,7 +373,7 @@ def create_table_neighbour_code_to_contour_length(spacing_mm):
                                        "10", 2)] = 2*diag
 
   neighbour_code_to_contour_length[int("01"
-                                       "第一阶段", 2)] = diag
+                                       "", 2)] = diag
 
   neighbour_code_to_contour_length[int("10"
                                        "00", 2)] = diag
@@ -385,15 +385,15 @@ def create_table_neighbour_code_to_contour_length(spacing_mm):
                                        "10", 2)] = vertical
 
   neighbour_code_to_contour_length[int("10"
-                                       "第一阶段", 2)] = diag
+                                       "", 2)] = diag
 
-  neighbour_code_to_contour_length[int("第一阶段"
+  neighbour_code_to_contour_length[int(""
                                        "00", 2)] = horizontal
 
-  neighbour_code_to_contour_length[int("第一阶段"
+  neighbour_code_to_contour_length[int(""
                                        "01", 2)] = diag
 
-  neighbour_code_to_contour_length[int("第一阶段"
+  neighbour_code_to_contour_length[int(""
                                        "10", 2)] = diag
   # pyformat: enable
 
