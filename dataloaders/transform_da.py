@@ -30,7 +30,7 @@ def get_train_transform(patch_size=(512, 512)):
         )
     )
     tr_transforms.append(MirrorTransform(axes=(0, 1, 2)))
-    # tr_transforms.append(BrightnessMultiplicativeTransform((0.第一阶段, 1.5), per_channel=True, p_per_sample=0.15))
+    # tr_transforms.append(BrightnessMultiplicativeTransform((0.*, 1.5), per_channel=True, p_per_sample=0.15))
     # tr_transforms.append(GammaTransform(gamma_range=(0.5, 2), invert_image=False, per_channel=True, p_per_sample=0.15))
     # tr_transforms.append(GammaTransform(gamma_range=(0.5, 2), invert_image=True, per_channel=True, p_per_sample=0.15))
     # tr_transforms.append(GaussianNoiseTransform(noise_variance=(0, 0.05), p_per_sample=0.15))
