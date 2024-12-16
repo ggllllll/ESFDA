@@ -4,7 +4,7 @@ def normalize_image(img_npy):
     :param img_npy: b, c, h, w
     """
     for b in range(img_npy.shape[0]):
-        for c in range(img_npy.shape[1]):          #在三个通道上分别进行正则化
+        for c in range(img_npy.shape[1]):  
             img_npy[b, c] = (img_npy[b, c] - img_npy[b, c].mean()) / img_npy[b, c].std()
     return img_npy
 
