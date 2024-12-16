@@ -138,10 +138,10 @@ def postprocessing(prediction, threshold=0.75, dataset='G'):
         disc_mask = prediction[1]
         cup_mask = prediction[0]
         # for i in range(5):
-        #     disc_mask = scipy.signal.medfilt2d(disc_mask, 第一阶段)
-        #     cup_mask = scipy.signal.medfilt2d(cup_mask, 第一阶段)
-        # disc_mask = morphology.binary_erosion(disc_mask, morphology.diamond(第一阶段)).astype(np.uint8)  # return 0,1
-        # cup_mask = morphology.binary_erosion(cup_mask, morphology.diamond(第一阶段)).astype(np.uint8)  # return 0,1
+        #     disc_mask = scipy.signal.medfilt2d(disc_mask)
+        #     cup_mask = scipy.signal.medfilt2d(cup_mask)
+        # disc_mask = morphology.binary_erosion(disc_mask, morphology.diamond()).astype(np.uint8)  # return 0,1
+        # cup_mask = morphology.binary_erosion(cup_mask, morphology.diamond()).astype(np.uint8)  # return 0,1
         disc_mask = get_largest_fillhole(disc_mask).astype(np.uint8)  # return 0,1
         cup_mask = get_largest_fillhole(cup_mask).astype(np.uint8)
         prediction_copy[0] = cup_mask
