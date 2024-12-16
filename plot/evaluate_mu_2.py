@@ -46,7 +46,7 @@ def eval_print_all_CU(pred_img_path, gt_img_path):
         gt_name = os.path.join(gt_img_path,temp_list[:-4]+'.png')
         pred = cv2.resize(cv2.imread(pred_name,0),(512,512), interpolation=cv2.INTER_NEAREST)
         gt = cv2.resize(cv2.imread(gt_name,0),(512,512), interpolation=cv2.INTER_NEAREST)
-        # 画图
+
         gt_oc = cv2.resize(cv2.imread(gt_name, 0),(512,512), interpolation=cv2.INTER_NEAREST)
         gt_oc[gt_oc == 0] = 255
         gt_oc[gt_oc == 128] = 0
