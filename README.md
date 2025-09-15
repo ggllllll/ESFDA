@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```shell
           python Train_target.py
 ```
-- 5. Validation stage: You can get the pre-trained weights at https://drive.google.com/file/d/1XOjpNu_SO40vKy820OYRpe5ZVgUtNubD/view?usp=drive_link and validate it. If you have any questions please contact: sau_guanguilin@163.com
+- 5. Validation stage: You can get the pre-trained weights at https://drive.google.com/file/d/1XOjpNu_SO40vKy820OYRpe5ZVgUtNubD/view?usp=drive_link and validate it.
 ```shell
           python Validate.py
 ```
