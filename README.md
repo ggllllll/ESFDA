@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 - 1. Download the dataset and modify the relevant paths in the configuration file.
 - 2. Source Model Train
-  -- We use the code provided by [ProSFDA](https://github.com/ShishuaiHu/ProSFDA) to train the source model. If you want to use our trained source model, please contact me.
+  -- We use the code provided by [ProSFDA](https://github.com/ShishuaiHu/ProSFDA) to train the source model.
 - 3. Generation phase: Generate target domain pseudo-labels
 ```shell
           python generate_pseudo.py
